@@ -16,11 +16,10 @@
                 <dt>&nbsp;</dt>
                 <dt>共有 <em>53359</em> 篇资讯， <a href="http://www.oschina.net/home/go?page=admin%2Fnew-release">投递新闻»</a></dt>
             </dl>
-            <form action="http://www.oschina.net/search" class="search">
+            </div>
             <input type="hidden" name="scope" value="project">
             <input id="channel_q" type="text" name="q" value="" placeholder="资讯、软件、分享、代码、博客" class="TXT">
             <button type="submit" class="BTN">搜 索</button>
-            </form>
             <div class="clear"></div>
         </div>
     </div>
@@ -71,7 +70,6 @@
 
     <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
     <asp:CustomValidator ID="CustomValidator1" runat="server" ErrorMessage="CustomValidator"></asp:CustomValidator>
-    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBox1" Style="color: red" ErrorMessage="*"></asp:RequiredFieldValidator>
     <asp:GridView ID="GridView1" runat="server" BackColor="#DEBA84" BorderColor="#DEBA84" BorderStyle="None" BorderWidth="1px" CellPadding="3" CellSpacing="2">
         <FooterStyle BackColor="#F7DFB5" ForeColor="#8C4510" />
         <HeaderStyle BackColor="#A55129" Font-Bold="True" ForeColor="White" />
@@ -106,8 +104,60 @@
             </table>
         </FooterTemplate>
     </asp:Repeater>
-    <input id="Button1" type="button" value="button" /><input id="Reset1" type="reset" value="reset" /><input id="Submit1" type="submit" value="submit" /><input id="File1" type="file" /><input id="Checkbox1" type="checkbox" />
+        
+    <asp:Repeater ID="Repeater2" runat="server">
+        <HeaderTemplate>
+            <table>
+                <tr>
+                    <td>开户人</td>
+                    <td>身份证</td>
+                    <td>电话</td>
+                    <td>地址</td>
+                </tr>
+        </HeaderTemplate>
+        <ItemTemplate>
+            <tr>
+                <td><%# Eval("CustomerName") %></td>
+                <td><%# Eval("Pid") %></td>
+                <td><%# Eval("TelePhone") %></td>
+                <td><%# DataBinder.Eval(Container.DataItem,"Address")%></td>
+            </tr>
+        </ItemTemplate>
+        <FooterTemplate>
+            </table>
+        </FooterTemplate>
+    </asp:Repeater>    
+        
+        
+    <asp:Repeater ID="Repeater3" runat="server">
+        <HeaderTemplate>
+            <table>
+                <tr>
+                    <td>cardno</td>
+                    <td>curtype</td>
+                    <td>savingtypr</td>
+                    <td>balance</td>
+                </tr>
+        </HeaderTemplate>
+        <ItemTemplate>
+            <tr>
+                <td><%# Eval("cardno") %></td>
+                <td><%# Eval("curtype") %></td>
+                <td><%# Eval("savingtypr") %></td>
+                <td><%# DataBinder.Eval(Container.DataItem,"balance")%></td>
+            </tr>
+        </ItemTemplate>
+        <FooterTemplate>
+            </table>
+        </FooterTemplate>
+    </asp:Repeater>  
 
+    <input id="Button1" type="button" value="button" /><input id="Reset1" type="reset" value="reset" /><input id="Submit1" type="submit" value="submit" /><input id="File1" type="file" /><input id="Checkbox1" type="checkbox" />
+        <br/>
+        <br/>
+    <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+    <asp:Button ID="Button2" runat="server" Text="Button" OnClick="Button2_Click" />
+        <asp:Label ID="Label4" runat="server" Text="Label"></asp:Label>
     </form>
 </body>
 </html>

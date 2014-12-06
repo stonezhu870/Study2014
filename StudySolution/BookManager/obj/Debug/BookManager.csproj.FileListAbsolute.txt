@@ -18,3 +18,13 @@ D:\workspace\Study20142\StudySolution\BookManager\bin\Microsoft.Web.Infrastructu
 D:\workspace\Study20142\StudySolution\BookManager\obj\Debug\BookManager.csprojResolveAssemblyReference.cache
 D:\workspace\Study20142\StudySolution\BookManager\obj\Debug\BookManager.dll
 D:\workspace\Study20142\StudySolution\BookManager\obj\Debug\BookManager.pdb
+D:\00workspace\Study20142\StudySolution\BookManager\bin\BookManager.dll.config
+D:\00workspace\Study20142\StudySolution\BookManager\bin\BookManager.dll
+D:\00workspace\Study20142\StudySolution\BookManager\bin\BookManager.pdb
+D:\00workspace\Study20142\StudySolution\BookManager\bin\Microsoft.Web.Infrastructure.dll
+D:\00workspace\Study20142\StudySolution\BookManager\bin\Unity.dll
+D:\00workspace\Study20142\StudySolution\BookManager\bin\Unity.pdb
+D:\00workspace\Study20142\StudySolution\BookManager\bin\Microsoft.Web.Infrastructure.xml
+D:\00workspace\Study20142\StudySolution\BookManager\obj\Debug\BookManager.csprojResolveAssemblyReference.cache
+D:\00workspace\Study20142\StudySolution\BookManager\obj\Debug\BookManager.dll
+D:\00workspace\Study20142\StudySolution\BookManager\obj\Debug\BookManager.pdb

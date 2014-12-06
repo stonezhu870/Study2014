@@ -8,3 +8,8 @@ D:\workspace\Study20142\StudySolution\Unity\bin\Debug\Unity.pdb
 D:\workspace\Study20142\StudySolution\Unity\obj\Debug\Unity.csprojResolveAssemblyReference.cache
 D:\workspace\Study20142\StudySolution\Unity\obj\Debug\Unity.dll
 D:\workspace\Study20142\StudySolution\Unity\obj\Debug\Unity.pdb
+D:\00workspace\Study20142\StudySolution\Unity\obj\Debug\Unity.csprojResolveAssemblyReference.cache
+D:\00workspace\Study20142\StudySolution\Unity\obj\Debug\Unity.dll
+D:\00workspace\Study20142\StudySolution\Unity\bin\Debug\Unity.dll
+D:\00workspace\Study20142\StudySolution\Unity\bin\Debug\Unity.pdb
+D:\00workspace\Study20142\StudySolution\Unity\obj\Debug\Unity.pdb

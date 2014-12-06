@@ -25,6 +25,25 @@ Ajax
 Session
 ViewState
 数据库
+事务
+	数据库的事务
+	BEGIN tran
+
+	COMMIT;
+	ROLLBACK
+
+	程序中事务
+	需要引用System.Transactions.dll
+	using (var tran1 = new TransactionScope())
+    {
+		using (var tran = new TransactionScope())
+		{
+			//只有执行了下面的事务提交方法，那么整个事务才会被提交，否则会被回滚
+			tran.Complete();
+		}
+	}
+
+	事务是可以嵌套的，只有最外层的事务被提交了，整个事务才会被提交，否则即使被嵌套的子事务提交了，也会被回滚
 
 
 ======

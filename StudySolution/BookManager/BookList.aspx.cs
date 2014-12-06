@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Transactions;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using ATMSolution.Model;
+using Unity;
 
 
 namespace BookManager
@@ -28,18 +30,24 @@ namespace BookManager
 
         private void Init()
         {
+            var dao = new UserInfoDao();
+
             //获取用户信息对象作为数据源绑定到Reperter
-            var userInfoList = FileHelper.GetUserInfos();
+            var userInfoList = dao.GetList(); //FileHelper.GetUserInfos();
             Repeater1.DataSource = userInfoList;
             Repeater1.DataBind(); //调用了DataBind方法才会真正绑定到控件上
-
 
             DropDownList1.DataSource = userInfoList;
             DropDownList1.DataTextField = "CustomerName";
             DropDownList1.DataValueField = "Id";
             DropDownList1.DataBind();
 
-            Session["name"] = "aaa";
+            //Session["name"] = "aaa";
+            Repeater2.DataSource =  dao.GetTable();
+            Repeater2.DataBind(); //调用了DataBind方法才会真正绑定到控件上
+
+            Repeater3.DataSource = DataHelper.Query("SELECT * FROM cardInfo");
+            Repeater3.DataBind();
         }
 
         protected void Calendar1_SelectionChanged(object sender, EventArgs e)
@@ -48,10 +56,28 @@ namespace BookManager
 
         protected void LinkButton1_Click(object sender, EventArgs e)
         {
-            Label1.Text = DateTime.Now.ToString();
+            using (var tran = new TransactionScope())
+            {
+                //去新增交易记录表
 
-            Repeater1.DataSource = new List<string>();
-            Repeater1.DataBind();
+                //去更新余额
+
+                tran.Complete();
+            }
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            var pid = TextBox2.Text;
+
+            var dao = new UserInfoDao();
+
+            using (var tran = new TransactionScope())
+            {
+                var result = dao.UpdateUserInfo(1, pid);
+
+                Label4.Text = result ? "成功" : "失败";
+            }
         }
     }
 }
