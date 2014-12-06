@@ -78,6 +78,7 @@
     <Content Include="WebForm1.aspx" />
     <Content Include="WebTest.aspx" />
     <Content Include="WebTest2.aspx" />
+    <Content Include="WebTest3.aspx" />
     <Content Include="备忘.txt" />
   </ItemGroup>
   <ItemGroup>
@@ -140,6 +141,13 @@
     </Compile>
     <Compile Include="WebTest2.aspx.designer.cs">
       <DependentUpon>WebTest2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebTest3.aspx.cs">
+      <DependentUpon>WebTest3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebTest3.aspx.designer.cs">
+      <DependentUpon>WebTest3.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
