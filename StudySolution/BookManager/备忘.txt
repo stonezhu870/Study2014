@@ -1,0 +1,27 @@
+﻿后缀名总结
+.js :	js文件
+.css:	css文件（样式表）
+.cs :	C#后台代码文件
+.aspx:	asp.net前台页面
+.asax:	全局Application文件
+.master	母板页文件
+.config	配置文件
+.xml	
+
+
+
+
+
+
+===================
+控件绑定
+母板页
+Request
+Response
+页面访问的顺序
+Page.IsPostBack
+Ajax
+导航（站点地图）
+Session
+ViewState
+数据库

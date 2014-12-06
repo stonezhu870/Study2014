@@ -1,0 +1,10 @@
+D:\00workspace\Study2014\StudySolution\BookManager\obj\Debug\BookManager.csprojResolveAssemblyReference.cache
+D:\00workspace\Study2014\StudySolution\BookManager\bin\BookManager.dll.config
+D:\00workspace\Study2014\StudySolution\BookManager\bin\BookManager.dll
+D:\00workspace\Study2014\StudySolution\BookManager\bin\BookManager.pdb
+D:\00workspace\Study2014\StudySolution\BookManager\bin\Microsoft.Web.Infrastructure.dll
+D:\00workspace\Study2014\StudySolution\BookManager\bin\Microsoft.Web.Infrastructure.xml
+D:\00workspace\Study2014\StudySolution\BookManager\obj\Debug\BookManager.dll
+D:\00workspace\Study2014\StudySolution\BookManager\obj\Debug\BookManager.pdb
+D:\00workspace\Study2014\StudySolution\BookManager\bin\Unity.dll
+D:\00workspace\Study2014\StudySolution\BookManager\bin\Unity.pdb

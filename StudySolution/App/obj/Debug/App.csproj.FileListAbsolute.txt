@@ -1,0 +1,14 @@
+D:\00workspace\Study2014\StudySolution\App\bin\Debug\App.exe
+D:\00workspace\Study2014\StudySolution\App\bin\Debug\App.pdb
+D:\00workspace\Study2014\StudySolution\App\obj\Debug\App.csprojResolveAssemblyReference.cache
+D:\00workspace\Study2014\StudySolution\App\obj\Debug\App.Properties.Resources.resources
+D:\00workspace\Study2014\StudySolution\App\obj\Debug\App.csproj.GenerateResource.Cache
+D:\00workspace\Study2014\StudySolution\App\obj\Debug\App.exe
+D:\00workspace\Study2014\StudySolution\App\obj\Debug\App.pdb
+D:\00workspace\Study2014\StudySolution\App\obj\Debug\App.Form2.resources
+D:\00workspace\Study2014\StudySolution\App\obj\Debug\App.Form1.resources
+D:\00workspace\Study2014\StudySolution\App\obj\Debug\App.Form3.resources
+D:\00workspace\Study2014\StudySolution\App\obj\Debug\App.Form5.resources
+D:\00workspace\Study2014\StudySolution\App\obj\Debug\App.Form4.resources
+D:\00workspace\Study2014\StudySolution\App\obj\Debug\App.Form6.resources
+D:\00workspace\Study2014\StudySolution\App\obj\Debug\App.Form7.resources
