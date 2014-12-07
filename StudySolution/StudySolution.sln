@@ -11,25 +11,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookManager", "BookManager\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity", "Unity\Unity.csproj", "{26F78BD9-1212-401D-AFAE-830FC7D4929B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChengLi", "ChengLi\ChengLi.csproj", "{FD80B821-5367-4E4D-B98C-215F111116CB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{97D50DCF-E136-4144-A0CF-4957552A1331}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{A129DBAF-A3DD-4DE7-BE1C-4047FB0D1DA9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Old", "Old", "{4B215BEA-376C-43DC-9BC3-3F40B33ABBF3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{C71A02D6-616D-441F-9BFD-A42B0F50D5F3}"
+EndProject
 Global
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 5
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://stonezhu870.visualstudio.com/defaultcollection
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = App\\App.csproj
-		SccProjectName1 = App
-		SccLocalPath1 = App
-		SccProjectUniqueName2 = ATMSolution\\ATMSolution.csproj
-		SccProjectName2 = ATMSolution
-		SccLocalPath2 = ATMSolution
-		SccProjectUniqueName3 = BookManager\\BookManager.csproj
-		SccProjectName3 = BookManager
-		SccLocalPath3 = BookManager
-		SccProjectUniqueName4 = Unity\\Unity.csproj
-		SccProjectName4 = Unity
-		SccLocalPath4 = Unity
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -51,8 +43,30 @@ Global
 		{26F78BD9-1212-401D-AFAE-830FC7D4929B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{26F78BD9-1212-401D-AFAE-830FC7D4929B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{26F78BD9-1212-401D-AFAE-830FC7D4929B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD80B821-5367-4E4D-B98C-215F111116CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD80B821-5367-4E4D-B98C-215F111116CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD80B821-5367-4E4D-B98C-215F111116CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD80B821-5367-4E4D-B98C-215F111116CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97D50DCF-E136-4144-A0CF-4957552A1331}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97D50DCF-E136-4144-A0CF-4957552A1331}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97D50DCF-E136-4144-A0CF-4957552A1331}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97D50DCF-E136-4144-A0CF-4957552A1331}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A129DBAF-A3DD-4DE7-BE1C-4047FB0D1DA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A129DBAF-A3DD-4DE7-BE1C-4047FB0D1DA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A129DBAF-A3DD-4DE7-BE1C-4047FB0D1DA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A129DBAF-A3DD-4DE7-BE1C-4047FB0D1DA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C71A02D6-616D-441F-9BFD-A42B0F50D5F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C71A02D6-616D-441F-9BFD-A42B0F50D5F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C71A02D6-616D-441F-9BFD-A42B0F50D5F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C71A02D6-616D-441F-9BFD-A42B0F50D5F3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{13C23BB1-29F3-4D2C-8F4D-04088DB3EE5D} = {4B215BEA-376C-43DC-9BC3-3F40B33ABBF3}
+		{CF631431-A46B-43A6-A8A7-8E8A48A2EBF2} = {4B215BEA-376C-43DC-9BC3-3F40B33ABBF3}
+		{C52D6DC4-172C-4735-9C63-DD9E0F838E32} = {4B215BEA-376C-43DC-9BC3-3F40B33ABBF3}
+		{26F78BD9-1212-401D-AFAE-830FC7D4929B} = {4B215BEA-376C-43DC-9BC3-3F40B33ABBF3}
 	EndGlobalSection
 EndGlobal

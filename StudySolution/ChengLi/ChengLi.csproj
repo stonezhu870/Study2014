@@ -1,0 +1,523 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FD80B821-5367-4E4D-B98C-215F111116CB}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ChengLi</RootNamespace>
+    <AssemblyName>ChengLi</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Dll\Json\Net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="about.html" />
+    <Content Include="Admin\ProductEdit.aspx" />
+    <Content Include="blog.html" />
+    <Content Include="CommonAjax.aspx" />
+    <Content Include="contact.html" />
+    <Content Include="element.html" />
+    <Content Include="fonts\OpenSans-Bold-webfont.svg" />
+    <Content Include="fonts\OpenSans-Italic-webfont.svg" />
+    <Content Include="fonts\OpenSans-Light-webfont.svg" />
+    <Content Include="fonts\OpenSans-Regular-webfont.svg" />
+    <Content Include="fonts\OpenSans-Semibold-webfont.svg" />
+    <Content Include="fonts\stylesheet.css" />
+    <Content Include="images\apple-touch-icon-114x114.png" />
+    <Content Include="images\apple-touch-icon-72x72.png" />
+    <Content Include="images\apple-touch-icon.png" />
+    <Content Include="images\arrow-down.png" />
+    <Content Include="images\arrow-left.png" />
+    <Content Include="images\bg-navigation.png" />
+    <Content Include="images\bg-navigation2.png" />
+    <Content Include="images\content\avatar.gif" />
+    <Content Include="images\content\index.html" />
+    <Content Include="images\content\lp1.jpg" />
+    <Content Include="images\content\lp2.jpg" />
+    <Content Include="images\content\lp3.jpg" />
+    <Content Include="images\content\pf\index.html" />
+    <Content Include="images\content\pf\pf1.jpg" />
+    <Content Include="images\content\pf\pf10.jpg" />
+    <Content Include="images\content\pf\pf11.jpg" />
+    <Content Include="images\content\pf\pf12.jpg" />
+    <Content Include="images\content\pf\pf2.jpg" />
+    <Content Include="images\content\pf\pf3.jpg" />
+    <Content Include="images\content\pf\pf4.jpg" />
+    <Content Include="images\content\pf\pf5.jpg" />
+    <Content Include="images\content\pf\pf6.jpg" />
+    <Content Include="images\content\pf\pf7.jpg" />
+    <Content Include="images\content\pf\pf8.jpg" />
+    <Content Include="images\content\pf\pf9.jpg" />
+    <Content Include="images\content\pic1.jpg" />
+    <Content Include="images\content\pic10.jpg" />
+    <Content Include="images\content\pic2.jpg" />
+    <Content Include="images\content\pic3.jpg" />
+    <Content Include="images\content\pic4.jpg" />
+    <Content Include="images\content\pic5.jpg" />
+    <Content Include="images\content\pic6.jpg" />
+    <Content Include="images\content\pic7.jpg" />
+    <Content Include="images\content\pic8.jpg" />
+    <Content Include="images\content\pic9.jpg" />
+    <Content Include="images\content\post1.jpg" />
+    <Content Include="images\content\post2.jpg" />
+    <Content Include="images\content\post3.jpg" />
+    <Content Include="images\content\s1.jpg" />
+    <Content Include="images\content\slide1.jpg" />
+    <Content Include="images\content\slide2.jpg" />
+    <Content Include="images\content\slide3.jpg" />
+    <Content Include="images\content\think.png" />
+    <Content Include="images\facebook\btnNext.png" />
+    <Content Include="images\facebook\btnPrevious.png" />
+    <Content Include="images\facebook\contentPatternBottom.png" />
+    <Content Include="images\facebook\contentPatternLeft.png" />
+    <Content Include="images\facebook\contentPatternRight.png" />
+    <Content Include="images\facebook\contentPatternTop.png" />
+    <Content Include="images\facebook\default_thumbnail.gif" />
+    <Content Include="images\facebook\index.html" />
+    <Content Include="images\facebook\loader.gif" />
+    <Content Include="images\facebook\sprite.png" />
+    <Content Include="images\favicon.ico" />
+    <Content Include="images\hover-doc.png" />
+    <Content Include="images\hover-link.png" />
+    <Content Include="images\hover-zoom.png" />
+    <Content Include="images\icons\cal.png" />
+    <Content Include="images\icons\icon1.png" />
+    <Content Include="images\icons\icon2.png" />
+    <Content Include="images\icons\icon3.png" />
+    <Content Include="images\icons\index.html" />
+    <Content Include="images\line_foot.gif" />
+    <Content Include="images\list-circle.png" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\menu-icon.png" />
+    <Content Include="images\quote.png" />
+    <Content Include="images\separator.png" />
+    <Content Include="images\shadow-extrasmall.gif" />
+    <Content Include="images\shadow-extrasmall2.gif" />
+    <Content Include="images\shadow-medium.gif" />
+    <Content Include="images\shadow-mini.gif" />
+    <Content Include="images\shadow-small.gif" />
+    <Content Include="images\sidebar-separator.png" />
+    <Content Include="images\sidebar-separator2.png" />
+    <Content Include="images\tweet.png" />
+    <Content Include="Index.aspx" />
+    <Content Include="index.html" />
+    <Content Include="Js\calendar.js" />
+    <Content Include="Js\contact.js" />
+    <Content Include="Js\custom.js" />
+    <Content Include="Js\fade.js" />
+    <Content Include="Js\hoverIntent.js" />
+    <Content Include="Js\jquery-1.6.4.min.js" />
+    <Content Include="Js\jquery-1.8.2.min.js" />
+    <Content Include="Js\jquery.easing.1.3.js" />
+    <Content Include="Js\jquery.flexslider-min.js" />
+    <Content Include="Js\jquery.prettyPhoto.js" />
+    <Content Include="Js\jquery.tweetable.js" />
+    <Content Include="Js\lang\en.js" />
+    <Content Include="Js\lang\zh-cn.js" />
+    <Content Include="Js\lang\zh-tw.js" />
+    <Content Include="Js\quicksand.js" />
+    <Content Include="Js\quicksand_config.js" />
+    <Content Include="Js\skin\datePicker.gif" />
+    <Content Include="Js\skin\default\datepicker.css" />
+    <Content Include="Js\skin\default\img.gif" />
+    <Content Include="Js\skin\WdatePicker.css" />
+    <Content Include="Js\skin\whyGreen\bg.jpg" />
+    <Content Include="Js\skin\whyGreen\datepicker.css" />
+    <Content Include="Js\skin\whyGreen\img.gif" />
+    <Content Include="Js\superfish.js" />
+    <Content Include="Js\supersubs.js" />
+    <Content Include="Js\WdatePicker.js" />
+    <Content Include="Kindeditor\kindeditor-min.js" />
+    <Content Include="Kindeditor\lang\ar.js" />
+    <Content Include="Kindeditor\lang\en.js" />
+    <Content Include="Kindeditor\lang\ko.js" />
+    <Content Include="Kindeditor\lang\zh_CN.js" />
+    <Content Include="Kindeditor\lang\zh_TW.js" />
+    <Content Include="Kindeditor\plugins\anchor\anchor.js" />
+    <Content Include="Kindeditor\plugins\autoheight\autoheight.js" />
+    <Content Include="Kindeditor\plugins\baidumap\baidumap.js" />
+    <Content Include="Kindeditor\plugins\baidumap\index.html" />
+    <Content Include="Kindeditor\plugins\baidumap\map.html" />
+    <Content Include="Kindeditor\plugins\clearhtml\clearhtml.js" />
+    <Content Include="Kindeditor\plugins\code\code.js" />
+    <Content Include="Kindeditor\plugins\code\prettify.css" />
+    <Content Include="Kindeditor\plugins\code\prettify.js" />
+    <Content Include="Kindeditor\plugins\emoticons\emoticons.js" />
+    <Content Include="Kindeditor\plugins\emoticons\images\0.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\1.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\10.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\100.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\101.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\102.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\103.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\104.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\105.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\106.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\107.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\108.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\109.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\11.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\110.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\111.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\112.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\113.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\114.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\115.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\116.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\117.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\118.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\119.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\12.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\120.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\121.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\122.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\123.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\124.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\125.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\126.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\127.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\128.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\129.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\13.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\130.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\131.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\132.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\133.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\134.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\14.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\15.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\16.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\17.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\18.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\19.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\2.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\20.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\21.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\22.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\23.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\24.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\25.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\26.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\27.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\28.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\29.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\3.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\30.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\31.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\32.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\33.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\34.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\35.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\36.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\37.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\38.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\39.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\4.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\40.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\41.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\42.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\43.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\44.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\45.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\46.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\47.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\48.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\49.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\5.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\50.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\51.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\52.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\53.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\54.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\55.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\56.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\57.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\58.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\59.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\6.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\60.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\61.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\62.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\63.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\64.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\65.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\66.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\67.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\68.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\69.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\7.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\70.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\71.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\72.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\73.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\74.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\75.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\76.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\77.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\78.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\79.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\8.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\80.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\81.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\82.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\83.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\84.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\85.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\86.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\87.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\88.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\89.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\9.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\90.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\91.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\92.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\93.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\94.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\95.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\96.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\97.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\98.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\99.gif" />
+    <Content Include="Kindeditor\plugins\emoticons\images\static.gif" />
+    <Content Include="Kindeditor\plugins\filemanager\filemanager.js" />
+    <Content Include="Kindeditor\plugins\filemanager\images\file-16.gif" />
+    <Content Include="Kindeditor\plugins\filemanager\images\file-64.gif" />
+    <Content Include="Kindeditor\plugins\filemanager\images\folder-16.gif" />
+    <Content Include="Kindeditor\plugins\filemanager\images\folder-64.gif" />
+    <Content Include="Kindeditor\plugins\filemanager\images\go-up.gif" />
+    <Content Include="Kindeditor\plugins\flash\flash.js" />
+    <Content Include="Kindeditor\plugins\image\image.js" />
+    <Content Include="Kindeditor\plugins\image\images\align_left.gif" />
+    <Content Include="Kindeditor\plugins\image\images\align_right.gif" />
+    <Content Include="Kindeditor\plugins\image\images\align_top.gif" />
+    <Content Include="Kindeditor\plugins\image\images\refresh.png" />
+    <Content Include="Kindeditor\plugins\insertfile\insertfile.js" />
+    <Content Include="Kindeditor\plugins\lineheight\lineheight.js" />
+    <Content Include="Kindeditor\plugins\link\link.js" />
+    <Content Include="Kindeditor\plugins\map\map.html" />
+    <Content Include="Kindeditor\plugins\map\map.js" />
+    <Content Include="Kindeditor\plugins\media\media.js" />
+    <Content Include="Kindeditor\plugins\multiimage\images\image.png" />
+    <Content Include="Kindeditor\plugins\multiimage\images\select-files-en.png" />
+    <Content Include="Kindeditor\plugins\multiimage\images\select-files-zh_CN.png" />
+    <Content Include="Kindeditor\plugins\multiimage\images\swfupload.swf" />
+    <Content Include="Kindeditor\plugins\multiimage\multiimage.js" />
+    <Content Include="Kindeditor\plugins\pagebreak\pagebreak.js" />
+    <Content Include="Kindeditor\plugins\plainpaste\plainpaste.js" />
+    <Content Include="Kindeditor\plugins\preview\preview.js" />
+    <Content Include="Kindeditor\plugins\quickformat\quickformat.js" />
+    <Content Include="Kindeditor\plugins\table\table.js" />
+    <Content Include="Kindeditor\plugins\template\html\1.html" />
+    <Content Include="Kindeditor\plugins\template\html\2.html" />
+    <Content Include="Kindeditor\plugins\template\html\3.html" />
+    <Content Include="Kindeditor\plugins\template\template.js" />
+    <Content Include="Kindeditor\plugins\wordpaste\wordpaste.js" />
+    <Content Include="Kindeditor\themes\common\anchor.gif" />
+    <Content Include="Kindeditor\themes\common\blank.gif" />
+    <Content Include="Kindeditor\themes\common\flash.gif" />
+    <Content Include="Kindeditor\themes\common\loading.gif" />
+    <Content Include="Kindeditor\themes\common\media.gif" />
+    <Content Include="Kindeditor\themes\common\rm.gif" />
+    <Content Include="Kindeditor\themes\default\background.png" />
+    <Content Include="Kindeditor\themes\default\default.css" />
+    <Content Include="Kindeditor\themes\default\default.png" />
+    <Content Include="Kindeditor\themes\qq\editor.gif" />
+    <Content Include="Kindeditor\themes\qq\qq.css" />
+    <Content Include="Kindeditor\themes\simple\simple.css" />
+    <Content Include="Portfolio.aspx" />
+    <Content Include="portfolio.html" />
+    <Content Include="service.html" />
+    <Content Include="Single.aspx" />
+    <Content Include="single.html" />
+    <Content Include="styles\color.css" />
+    <Content Include="styles\flexslider.css" />
+    <Content Include="styles\inner.css" />
+    <Content Include="styles\layout.css" />
+    <Content Include="styles\prettyPhoto.css" />
+    <Content Include="styles\skeleton.css" />
+    <Content Include="styles\style.css" />
+    <Content Include="Style\Admin.css" />
+    <Content Include="Upload\index_1.jpg" />
+    <Content Include="Upload\index_2.jpg" />
+    <Content Include="Upload\index_3.jpg" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ProductEdit.aspx.cs">
+      <DependentUpon>ProductEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ProductEdit.aspx.designer.cs">
+      <DependentUpon>ProductEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CommonAjax.aspx.cs">
+      <DependentUpon>CommonAjax.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommonAjax.aspx.designer.cs">
+      <DependentUpon>CommonAjax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.Master.cs">
+      <DependentUpon>Default.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.Master.designer.cs">
+      <DependentUpon>Default.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Portfolio.aspx.cs">
+      <DependentUpon>Portfolio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Portfolio.aspx.designer.cs">
+      <DependentUpon>Portfolio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Single.aspx.cs">
+      <DependentUpon>Single.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Single.aspx.designer.cs">
+      <DependentUpon>Single.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\Admin.Master" />
+    <Content Include="fonts\OpenSans-Bold-webfont.eot" />
+    <Content Include="fonts\OpenSans-Bold-webfont.ttf" />
+    <Content Include="fonts\OpenSans-Bold-webfont.woff" />
+    <Content Include="fonts\OpenSans-Bold-webfont_162a16fe.eot" />
+    <Content Include="fonts\OpenSans-Italic-webfont.eot" />
+    <Content Include="fonts\OpenSans-Italic-webfont.ttf" />
+    <Content Include="fonts\OpenSans-Italic-webfont.woff" />
+    <Content Include="fonts\OpenSans-Italic-webfont_162a16fe.eot" />
+    <Content Include="fonts\OpenSans-Light-webfont.eot" />
+    <Content Include="fonts\OpenSans-Light-webfont.ttf" />
+    <Content Include="fonts\OpenSans-Light-webfont.woff" />
+    <Content Include="fonts\OpenSans-Light-webfont_162a16fe.eot" />
+    <Content Include="fonts\OpenSans-Regular-webfont.eot" />
+    <Content Include="fonts\OpenSans-Regular-webfont.ttf" />
+    <Content Include="fonts\OpenSans-Regular-webfont.woff" />
+    <Content Include="fonts\OpenSans-Regular-webfont_162a16fe.eot" />
+    <Content Include="fonts\OpenSans-Semibold-webfont.eot" />
+    <Content Include="fonts\OpenSans-Semibold-webfont.ttf" />
+    <Content Include="fonts\OpenSans-Semibold-webfont.woff" />
+    <Content Include="fonts\OpenSans-Semibold-webfont_162a16fe.eot" />
+    <Content Include="images\content\pf\Thumbs.db" />
+    <Content Include="images\content\Thumbs.db" />
+    <Content Include="images\facebook\Thumbs.db" />
+    <Content Include="images\icons\Thumbs.db" />
+    <Content Include="Default.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{97d50dcf-e136-4144-a0cf-4957552a1331}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{c71a02d6-616d-441f-9bfd-a42b0f50d5f3}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>36397</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:36397/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

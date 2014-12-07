@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CommonAjax.aspx.cs" Inherits="ChengLi.CommonAjax" %>

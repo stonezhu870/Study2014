@@ -1,0 +1,138 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Default.master.cs" Inherits="ChengLi.Default" %>
+
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head runat="server">
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8" />
+	<title>ChengLi</title>
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+	<meta name="author" content="" />
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="/styles/skeleton.css" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/styles/flexslider.css" />
+    <link rel="stylesheet" href="/styles/color.css" />
+	<link rel="stylesheet" href="/styles/layout.css" />
+    <script src="/Js/jquery-1.8.2.min.js"></script>
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="/images/favicon.ico" />
+	<link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="/images/apple-touch-icon-72x72.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="/images/apple-touch-icon-114x114.png" />
+    
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="bodychild">
+	    <div id="outercontainer">
+            <!-- HEADER -->
+            <div id="outerheader">
+        	    <div class="container">
+                <header id="top" class="twelve columns">
+            	    <div id="logo" class="three columns alpha"><a href="index.html"><img src="images/logo.png" alt="" /></a></div>
+                    <div id="headerright" class="nine columns omega">
+                        <div class="search">
+                    	    <input type="text" name="s" id="s" size="35" />
+                            <input type="submit" value="Search" />
+                        </div>
+                    </div>
+
+                    <section id="navigation" class="twelve columns">
+                        <nav id="nav-wrap">
+                            <ul id="topnav" class="sf-menu">
+                                <li class="current"><a href="/Index.aspx">首页</a></li>
+                                <li><a href="/Portfolio.aspx?st=Products">产品中心</a>
+                            	    <asp:Repeater runat="server" ID="repProductList">
+                            	        <HeaderTemplate>
+                            	            <ul>
+                            	        </HeaderTemplate>
+                            	        <ItemTemplate>
+                                        	<li><a href="/Portfolio.aspx?st=Products&type=<%# Eval("Id") %>"><%# Eval("TypeName") %></a></li>                    	                
+                            	        </ItemTemplate>
+                                        <FooterTemplate>
+                                            </ul>
+                                        </FooterTemplate>
+                            	    </asp:Repeater>
+                                </li>
+                                <li><a href="/Portfolio.aspx?st=News">新闻中心</a>
+                            	    <asp:Repeater runat="server" ID="repNewList">
+                            	        <HeaderTemplate>
+                            	            <ul>
+                            	        </HeaderTemplate>
+                            	        <ItemTemplate>
+                                        	<li><a href="/Portfolio.aspx?st=News&type=<%# Eval("Id") %>"><%# Eval("TypeName") %></a></li>                    	                
+                            	        </ItemTemplate>
+                                        <FooterTemplate>
+                                            </ul>
+                                        </FooterTemplate>
+                            	    </asp:Repeater>
+                                </li>
+                                <li><a href="contact.html">联系我们</a></li>
+                            </ul><!-- topnav -->
+                        </nav><!-- nav -->	
+                        <div class="clear"></div>
+                    </section>
+                    <div class="clear"></div>
+                </header>
+                </div>
+            </div>
+            <!-- END HEADER -->
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+            </asp:ContentPlaceHolder>
+        
+            <!-- FOOTER -->
+            <div id="outerfooter">
+        	    <div class="container">
+        	    <div id="footercontainer" class="twelve columns">
+            	    <footer id="footer">&copy; Copyright &copy; 2014.Company name All rights reserved.</footer>
+                    <div id="toTop">^ Back to Top</div>
+                </div>
+                </div>
+            </div>
+            <!-- END FOOTER -->
+        </div>
+    </div>
+    </form>
+</body>
+  
+    <!-- jQuery Superfish -->
+<script type="text/javascript" src="js/hoverIntent.js"></script> 
+<script type="text/javascript" src="js/superfish.js"></script> 
+<script type="text/javascript" src="js/supersubs.js"></script>
+
+<!-- jQuery Flexslider -->
+<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+      <!-- jQuery Twitter -->
+<script type="text/javascript" src="js/jquery.tweetable.js"></script>
+
+<!-- Custom Script -->
+<script type="text/javascript" src="js/custom.js"></script>
+</html>
