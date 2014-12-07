@@ -53,3 +53,4 @@ D:\00workspace\Study20142\StudySolution\ATMSolution\obj\Debug\ATMSolution.csproj
 D:\00workspace\Study20142\StudySolution\ATMSolution\obj\Debug\ATMSolution.exe
 D:\00workspace\Study20142\StudySolution\ATMSolution\obj\Debug\ATMSolution.pdb
 D:\00workspace\Study20142\StudySolution\ATMSolution\bin\Debug\ATMSolution.exe.config
+D:\workspace\Study20142\StudySolution\ATMSolution\bin\Debug\ATMSolution.exe.config

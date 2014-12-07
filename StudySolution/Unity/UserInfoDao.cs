@@ -34,7 +34,7 @@ namespace Unity
             //执行
             //关闭数据库连接
             SqlConnection conn = new SqlConnection(ConnectionString);
-
+             
             SqlCommand command = new SqlCommand();
             command.Connection = conn; //告诉Sql命令类，数据库连接是什么
             command.CommandText = "select * from userInfo"; //sql语句是什么
@@ -82,9 +82,9 @@ namespace Unity
             //关闭数据库连接
 
             SqlConnection conn = new SqlConnection(ConnectionString);
-
+            
             SqlDataAdapter sda = new SqlDataAdapter("select * from userInfo", conn);
-
+            
             DataSet ds = new DataSet();
 
             try

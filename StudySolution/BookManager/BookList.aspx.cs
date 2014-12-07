@@ -71,7 +71,7 @@ namespace BookManager
             var pid = TextBox2.Text;
 
             var dao = new UserInfoDao();
-
+            
             using (var tran = new TransactionScope())
             {
                 var result = dao.UpdateUserInfo(1, pid);
